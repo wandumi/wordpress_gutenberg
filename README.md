@@ -36,6 +36,8 @@ One issue I neglected to address was the present plugin structure's lack of suit
 
 This separation not only enhances clarity but also makes it easier to manage updates, troubleshoot bugs, and expand the plugin without cluttering the root directory. Keeping assets organized is a best practice in plugin development, ensuring scalability and maintainability as the project grows.
 
+Another thing to consider is that I had meant to use the suggested WordPress technique to create a Gutenberg block. However, I encountered various complications, most likely due to package version conflicts and compatibility challenges, which would have greatly extended development time. Because of these constraints, I chose an alternative solution that ensures the block performs properly while adhering to WordPress development best practices.
+
 ## 🔧 Missing Block Registration in PHP
 
 Another shortcoming of my plugin is the lack of correct block registration in PHP. While my JavaScript handles the editor-side block behavior, the PHP file must explicitly register the block using register_block_type(). This ensures that the block is properly recognized by WordPress and loaded correctly in both the editor and frontend.
