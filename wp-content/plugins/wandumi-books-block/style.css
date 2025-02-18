@@ -1,0 +1,20 @@
+.books-list {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.books-list h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.books-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.books-list li {
+    padding: 5px 0;
+}
